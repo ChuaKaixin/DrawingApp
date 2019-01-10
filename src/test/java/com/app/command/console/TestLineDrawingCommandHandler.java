@@ -1,4 +1,4 @@
-package com.app.drawing.console;
+package com.app.command.console;
 
 import static org.junit.jupiter.api.Assertions.*;
 

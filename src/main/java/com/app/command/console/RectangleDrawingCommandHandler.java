@@ -11,7 +11,7 @@ public class RectangleDrawingCommandHandler extends DrawingCommandHandler {
 	private final int requiredCommandParametersCount = 5;
 	
 	@Override
-	public Canvas executeDrawingInstructions(String instructions, Canvas canvas) throws Exception{
+	public Canvas executeDrawingInstructions(String instructions, Canvas canvas) throws ConsoleCommandException{
 		String[] instructionParameters = instructions.split(" ");
 		int[]drawingcoordinates =  validateGeneralDrawingInstructions(instructionParameters, canvas, 1, 4);
 		if(isValidRectangleDrawingInstructions(drawingcoordinates)) {

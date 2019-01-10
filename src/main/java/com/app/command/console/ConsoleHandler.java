@@ -31,12 +31,13 @@ public class ConsoleHandler implements Handler {
 			case 'Q':
 				break;
 			case 'C': case 'R': case 'L': case 'B':
-				return handlers.get(commandType).executeDrawingInstructions(command, canvas);
+				canvas = handlers.get(commandType).executeDrawingInstructions(command, canvas);
+				break;
 			default:
 				throw new ConsoleCommandException("Program expects command parameter C/R/L/B/Q");
 			}
 		}
-		return null;
+		return canvas;
 	}
 	
 	

@@ -6,7 +6,7 @@ import com.app.exception.CanvasException;
 public class Canvas {
 	private CoordinateUnit[][] coordinates;
 	
-	public Canvas(int width, int height) throws Exception {
+	public Canvas(int width, int height) throws CanvasException {
 		if(width < 1 || height < 1) {
 			throw new CanvasException("Canvas width and height must be positive integers");
 		} else {

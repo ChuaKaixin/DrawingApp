@@ -1,4 +1,4 @@
-package com.app.drawing.console;
+package com.app.command.console;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import com.app.command.console.BucketFillDrawingCommandHandler;
 import com.app.command.console.DrawingCommandHandler;
 import com.app.drawing.CoordinateUnit;
+import com.app.drawing.console.Canvas;
+import com.app.drawing.console.ConsoleColour;
 import com.app.utils.Constants.CoordinateUnitType;
 import com.app.exception.ConsoleCommandException;
 import com.app.utils.Helper;
