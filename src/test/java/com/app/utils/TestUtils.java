@@ -14,7 +14,7 @@ class TestUtils {
 		try {
 			Utils.convertStringsToIntArray(new String[]{"C", "10", "12"} ,2, 8);
 		} catch (IntegerConversionException e) {
-			assertEquals("The parameters provided are invalid for conversion", e.getMessage());
+			assertEquals("Command Error: The parameters provided are invalid for conversion", e.getMessage());
 		}
 	}
 	
@@ -23,7 +23,7 @@ class TestUtils {
 		try {
 			Utils.convertStringsToIntArray(new String[]{"C", "B", "12"} ,1, 2);
 		} catch (IntegerConversionException e) {
-			assertEquals("Command instructions is invalid", e.getMessage());
+			assertEquals("Command Error: Command instructions is invalid", e.getMessage());
 		}
 	}
 	
