@@ -2,7 +2,7 @@ package com.app.drawing.console;
 
 import com.app.drawing.Colour;
 
-public class ConsoleColour implements Colour{
+public class ConsoleColour implements Colour<Character>{
 	private char charColour;
 	
 	public ConsoleColour(char charColour) {
@@ -14,7 +14,7 @@ public class ConsoleColour implements Colour{
 	}
 
 	@Override
-	public Object getColour() {
+	public Character getColour() {
 		return charColour;
 	}
 	

@@ -1,9 +1,12 @@
 package com.app.command;
 
+import java.io.InputStream;
+
 import com.app.drawing.console.Canvas;
 
 public interface Handler {
 	
-	public Canvas executeCommand(String command) throws Exception ;
+	public void startProgram(InputStream in) throws Exception;
+	//public Canvas executeCommand(String command) throws Exception ;
 	
 }
