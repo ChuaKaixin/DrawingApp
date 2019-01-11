@@ -20,10 +20,9 @@ Q              | Exits the program.													|
 * invalid command inputs will prompt an error for user to enter the command again.
 
 ## Installing and running
-In the application root folder
-* `mvn test` - runs junit tests
-* `mvn install` - builds jar in target folder
-* `java -jar DrawingApp.jar` - runs program
+* `mvn test` - Execute this in the application root folder to runs junit tests
+* `mvn install` - Execute this in the application root folder to build jar in target folder
+* `java -jar DrawingApp.jar` - Execute this to run the program
 
 ## Dependencies
 * Java 8
